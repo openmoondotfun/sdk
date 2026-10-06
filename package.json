@@ -1,0 +1,28 @@
+{
+  "name": "acp-core",
+  "version": "0.1.0",
+  "description": "Shared on-chain primitives for ACP (PDA derivation, Anchor program client, job lifecycle).",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "idl"
+  ],
+  "scripts": {
+    "build": "tsc && rm -rf node_modules/@coral-xyz node_modules/@solana",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@coral-xyz/anchor": ">=0.30.0 <0.33.0",
+    "@solana/spl-token": ">=0.4.0",
+    "@solana/web3.js": ">=1.95.0"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana/spl-token": "^0.4.14",
+    "@solana/web3.js": "^1.98.2",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.3"
+  }
+}
